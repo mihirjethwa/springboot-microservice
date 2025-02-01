@@ -14,27 +14,27 @@ This architecture ensures scalability, maintainability, and flexibility for futu
 
 ## Features
 
-**Service Discovery** :
-Eureka Server for registering and discovering microservices dynamically.
-Eureka Client integrated into each microservice for automatic registration.
-**Centralized Configuration** :
-Config Server fetches configuration files from a GitHub repository.
-Each microservice retrieves its configuration from the Config Server.
-**API Gateway** :
-Routes requests to appropriate microservices.
-Provides load balancing and security (e.g., authentication/authorization).
-**Database Management** :
-PostgreSQL initialized via Docker for local development.
-DBeaver Cloud for database visualization and management.
-**Scalability** :
+**Service Discovery** :  
+Eureka Server for registering and discovering microservices dynamically.  
+Eureka Client integrated into each microservice for automatic registration.  
+**Centralized Configuration** :  
+Config Server fetches configuration files from a GitHub repository.  
+Each microservice retrieves its configuration from the Config Server.  
+**API Gateway** :  
+Routes requests to appropriate microservices.  
+Provides load balancing and security (e.g., authentication/authorization).  
+**Database Management** :  
+PostgreSQL initialized via Docker for local development.  
+DBeaver Cloud for database visualization and management.  
+**Scalability** :  
 Designed to scale horizontally by adding more instances of microservices.
 
 ## Prerequisites
 
 Before running the project, ensure you have the following installed:
 
-Java 17 or higher
-Maven (for building the project)
-Docker (for initializing PostgreSQL)
-Git (for cloning the repository and accessing configuration files)
+Java 17 or higher  
+Maven (for building the project)  
+Docker (for initializing PostgreSQL)  
+Git (for cloning the repository and accessing configuration files)  
 DBeaver Cloud (optional, for database management)
