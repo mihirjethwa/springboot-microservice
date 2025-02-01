@@ -1,5 +1,7 @@
-#Spring Boot Microservices Project
-#Overview
+# Spring Boot Microservices Project
+
+## Overview
+
 This project demonstrates a microservices architecture using Spring Boot , Spring Cloud , Docker , and PostgreSQL . The system includes:
 
 Eureka Server : A service registry for registering and discovering microservices.  
@@ -10,7 +12,8 @@ PostgreSQL : Initialized using Docker for database persistence.
 DBeaver Cloud : Used for managing and visualizing the database.  
 This architecture ensures scalability, maintainability, and flexibility for future enhancements.
 
-##Features
+## Features
+
 **Service Discovery** :
 Eureka Server for registering and discovering microservices dynamically.
 Eureka Client integrated into each microservice for automatic registration.
@@ -26,7 +29,8 @@ DBeaver Cloud for database visualization and management.
 **Scalability** :
 Designed to scale horizontally by adding more instances of microservices.
 
-##Prerequisites
+## Prerequisites
+
 Before running the project, ensure you have the following installed:
 
 Java 17 or higher
