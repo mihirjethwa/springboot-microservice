@@ -1,0 +1,31 @@
+version: "3.9"
+
+services:
+  myappsql:
+    image: postgres:16-alpine3.19
+    container_name: myapp-sql
+    environment:
+      POSTGRES_USER: root
+      POSTGRES_PASSWORD: root
+      POSTGRES_DB: user_management
+    ports:
+      - "5434:5432"
+    networks:
+      - myapp-network
+
+  cloudbeaver:
+    image: dbeaver/cloudbeaver:latest
+    container_name: myapp-cloudbeaver
+    restart: always
+    ports:
+      - 8978:8978
+    volumes:
+      - ./cloudbeaver:/opt/c
+    depends_on:
+      - myappsql
+    networks:
+      - myapp-network
+
+networks:
+  myapp-network:
+    driver: bridge
